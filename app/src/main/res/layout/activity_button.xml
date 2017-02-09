@@ -20,7 +20,7 @@
         android:layout_alignTop="@+id/imageButton"
         android:layout_alignParentStart="true"
         android:layout_marginStart="13dp"
-        android:onClick="button2" />
+        android:onClick="button" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -32,25 +32,53 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_below="@+id/texto"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:id="@+id/editText2" />
+
     <Button
         android:text="Ok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button"
-        android:layout_marginTop="16dp"
-        android:layout_below="@+id/texto"
-        android:layout_alignEnd="@+id/texto" />
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/editText2"
+        android:onClick="graar_datos" />
 
-    <ImageButton
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/siguiente1"
-        android:id="@+id/imageButton2"
-        android:backgroundTint="@android:color/background_light"
-        android:onClick="llamada_dos"
-        android:layout_marginTop="100dp"
-        android:layout_below="@+id/button"
-        android:layout_alignParentEnd="true" />
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/editText2"
+        android:layout_alignEnd="@+id/editText2"
+        android:id="@+id/editText3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/imageButton"
+        android:layout_marginBottom="33dp"
+        android:id="@+id/textView"
+        android:background="@android:color/holo_blue_bright"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:hint="IMC" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -58,8 +86,19 @@
         app:srcCompat="@mipmap/tel"
         android:id="@+id/imageButton"
         android:elevation="14dp"
-        android:onClick="button"
         android:background="@android:color/background_light"
+        android:onClick="llamada_dos"
         android:layout_alignTop="@+id/imageButton2"
         android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/siguiente1"
+        android:id="@+id/imageButton2"
+        android:backgroundTint="@android:color/background_light"
+        android:layout_marginTop="35dp"
+        android:onClick="button2"
+        android:layout_below="@+id/button"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>

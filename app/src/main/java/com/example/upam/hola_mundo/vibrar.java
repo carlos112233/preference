@@ -8,16 +8,8 @@ import android.os.Vibrator;
  */
 
 public class vibrar {
-
     public vibrar(int time, Context ExternalVibration){
         Vibrator vib= (Vibrator) ExternalVibration.getSystemService(Context.VIBRATOR_SERVICE);
         vib.vibrate(time);
-
-
-
-
-
-
-
     }
 }
